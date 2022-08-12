@@ -1,13 +1,15 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
 {% for post in posts %}
-  <article>
-    <div class="post-wrap"><a href="{{ post.url | relative_url }}" class="article-link">
-    <div class="post-box">
-    {% include meta.html post=post preview=true %}
-    <div class="excerpt-wrap">{{ post.excerpt }}</div>
-    </div></a></div>
-    <!--<div class="more"><a href="{{ post.url | relative_url }}">읽기</a></div>-->
-  </article>
+  {% if post.categories contains 'post' %}
+    <article>
+      <div class="post-wrap"><a href="{{ post.url | relative_url }}" class="article-link">
+      <div class="post-box">
+      {% include meta.html post=post preview=true %}
+      <div class="excerpt-wrap">{{ post.excerpt }}</div>
+      </div></a></div>
+      <!--<div class="more"><a href="{{ post.url | relative_url }}">읽기</a></div>-->
+    </article>
+  {% endif %}
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
