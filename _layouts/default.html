@@ -30,8 +30,9 @@
   {% include menu.html menu=site.external %}
 </header>
 
+<section>
 {{ content }}
-
+</section>
 {% if site.external %}
 <footer>
   <div>{{ site.description | default: site.title }}</div>

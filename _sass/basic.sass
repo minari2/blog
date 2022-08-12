@@ -26,9 +26,6 @@ p
   text-align: justify
   margin: 30px 0
 
-.post-box p
-  margin: 0
-
 blockquote p
   margin: 15px 0
 
@@ -48,8 +45,12 @@ hr
   border: 1px solid reduce(30)
   margin: 2em 0
 
-article:not(:last-of-type)
-  border-bottom: 1px solid reduce(14)
+article:first-of-type
+  margin-top: 1.75em
+
+article:last-of-type
+  margin-bottom: 1.75em
+
 
 blockquote
   background: reduce(6)

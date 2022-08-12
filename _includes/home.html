@@ -4,7 +4,7 @@
     <div class="post-wrap"><a href="{{ post.url | relative_url }}" class="article-link">
     <div class="post-box">
     {% include meta.html post=post preview=true %}
-    {{ post.excerpt }}
+    <div class="excerpt-wrap">{{ post.excerpt }}</div>
     </div></a></div>
     <!--<div class="more"><a href="{{ post.url | relative_url }}">읽기</a></div>-->
   </article>
