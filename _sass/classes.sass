@@ -28,8 +28,26 @@
 .article-link:hover h1
   text-decoration: none
 
-.post-wrap
+section article:not(:last-of-type) .post-wrap
   border-bottom: 1px solid
+
+.post-box h1
+  margin: 0
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 3
+  -webkit-box-orient: vertical
+  word-wrap: break-word
+
+.post-box p
+  margin: 0
+  overflow: hidden
+  text-overflow: ellipsis
+  display: -webkit-box
+  -webkit-line-clamp: 4
+  -webkit-box-orient: vertical
+  word-wrap: break-word
 
 .archive
   font-size: 1.1em
