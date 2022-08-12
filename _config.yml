@@ -1,7 +1,7 @@
 title: "PnalLog"
 author: "devPnal"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
-permalink: /:title.html
+permalink: /post/:title.html
 lang: "ko"
 excerpt_separator: "\n\n\n"
 date_format: "%Y-%m-%d"
