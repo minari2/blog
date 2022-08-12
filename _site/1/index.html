@@ -1,8 +1,135 @@
-<p>저는 대표 이메일로 contact@pnal.dev를 사용합니다. 누군가 나에게 연락할 일이 있을 때, 사이트 관리자로서 어떤 이메일 주소로 사용해야하는지 여러 선택지가 있었는데요, 대표적으로 아래와 같은 이메일을 사용할 수 있습니다.</p>
+<!DOCTYPE html>
+<html lang="ko">
+<title>자동 발송 이메일 주소로 no-reply 좀 쓰지 말자! | PnalLog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="devPnal">
+<meta name="generator" content="Jekyll v4.2.2">
+<link rel="canonical" href="http://localhost:4000/1/">
+
+<link rel="stylesheet" href="/assets/css/frame.css">
+
+
+
+
+
+
+
+<header>
+  <a href="/" class="title">PnalLog</a>
+  <nav><a href="mailto:contact@pnal.dev" ><svg aria-label="Mail" class="icon"><use xlink:href="/assets/fontawesome/icons.svg#envelope"></use></svg></a><a href="https://github.com/devPnal" ><svg aria-label="Github" class="icon"><use xlink:href="/assets/fontawesome/icons.svg#github"></use></svg></a></nav>
+
+</header>
+
+<article>
+  <header>
+  <h1>자동 발송 이메일 주소로 no-reply 좀 쓰지 말자!</h1><time datetime="2022-08-11T00:00:00+09:00">2022-08-11</time>
+</header>
+
+  <p>사용자가 어떤 IT 서비스의 관리자에게 문의를 하려면 보통 서비스에 있는 문의 창구를 찾게 됩니다.
+대부분의 경우 사용자가 입력한 이메일 주소로 문의가 접수되었다는 메일이 발송되는데, 여러분의 자동발송 메일의 발신 주소는 무엇인가요?</p>
+
+<p>혹시 아래와 같은 목록 중 하나이지 않나요?</p>
 
 <ul>
-  <li>admin@abc.org</li>
-  <li>contact@abc.org</li>
-  <li>no-reply@abc.org</li>
-  <li>support@abc.org</li>
+  <li>no-reply@example.org</li>
+  <li>noreply@example.org</li>
+  <li>admin@example.org</li>
+  <li>do-not-reply@example.org</li>
 </ul>
+
+<p>오늘은 이런 <code class="language-plaintext highlighter-rouge">no-reply</code> 이메일에 대해 말해보려합니다.</p>
+
+<h2 id="고객이-왕이다-이메일도">고객이 왕이다 …이메일도?</h2>
+
+<p>최대한 고객의 기분을 상하지 않게 하는 것이 사용자 경험의 기본일 것입니다. 이러한 경험은 여러분의 서비스 내에서 구축될수도 있지만, 서비스 밖에서 구축될 수도 있습니다.</p>
+
+<p>만족스러운 가격에 단순한 사용법으로 큰 인기를 끌고있는 앱이 있다고 합시다. 개발한 서비스의 피드백을 받는 것은 무엇보다 중요한 일인데, 고객이 문의하자 자동 답변 이메일이 아래와 같이 왔습니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>발신인: noreply@example.org
+
+(접수를 알리는 내용)
+
+본 이메일은 발신 전용 이메일 주소입니다.
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">no-reply</code>는 직역하면 ‘답신금지’ 혹은 ‘답신하지 마시오’정도의 어구가 됩니다. <strong>고객</strong>은 <strong>운영자</strong>에게 답변을 듣는 질문자의 위치에 있지만, 운영자가 고객의 위는 아닙니다. 답신을 제한하는 것은 잠재적으로 고객을 운영자보다 아래에 두는 행동입니다.</p>
+
+<p>문의를 하는 순간 고객은 운영자에게 답변만 받으면 되는 단계까지 도달합니다. 반대로 말하자면, 고객은 더이상 말을 할 수 없습니다. 운영자만이 발언권을 얻게 되는 셈이죠. 도대체 고객의 의견을 제한할 필요가 과연 있을까요?</p>
+
+<p>이메일은 고객과 회사가 관계를 구축할 수 있는 좋은 기회이며, 이를 걷어차는 일은 없도록 해야합니다.</p>
+
+<h2 id="별도-문의-링크를-제공하면">별도 문의 링크를 제공하면?</h2>
+
+<p>물론 이메일에 추가 문의를 위한 별도의 링크를 다는 방법도 있습니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>발신인: noreply@example.org
+
+(접수를 알리는 내용)
+
+본 이메일은 발신 전용 이메일 주소입니다.
+추가 문의는 (이곳)을 이용해주세요.
+</code></pre></div></div>
+
+<p>고객은 추가 문의가 있을 때 제공된 링크로 접속하여 문의를 다시 남길 수 있죠. 그렇지만 문의가 접수되었다는 자동 발신 이메일을 자세히 읽어보는 고객은 드물기 때문에, 일부는 추가 문의를 위해 다시 문의 경로를 찾아 들어가는 일을 반복하게 될 것입니다.</p>
+
+<p>결국 회사가 할 일은 간단합니다. 고객이 이메일을 통해 회사와 소통할 수 있게 하세요. 이메일을 자사의 문의 시스템에 연동하는 일은 매우 쉽고, 많은 기업들이 이미 행하고 있는 방식입니다. 고객이 이메일을 보내면 회사의 시스템에 자동으로 문의가 접수되는 방식 말이지요.</p>
+
+<h2 id="벽을-보고-대화하는-고객">벽을 보고 대화하는 고객</h2>
+
+<p>이제 회사가 <code class="language-plaintext highlighter-rouge">no-reply</code>나 <code class="language-plaintext highlighter-rouge">admin</code>같은 권위주의적인 키워드 대신, 고객과 소통하고자 <code class="language-plaintext highlighter-rouge">contact</code>나 <code class="language-plaintext highlighter-rouge">support</code> 주소를 사용했다고 가정합시다. 그러나 대부분의 고객은 자동 발송 이메일에 답장을 할 생각을 추호도 하지 않습니다. 그걸 꼼꼼히 읽는 사람은 없기 때문이죠.</p>
+
+<p>자동 발신 이메일을 자세히 안읽는 이유는 무엇일까요? 바로 <strong>사람과 대화하고 있다</strong>라는 생각이 전혀 들지 않기 때문입니다. 자동 발신된 이메일은 대충 봐도 시스템이 보낸 이메일임을 알 수 있으니까요.</p>
+
+<p>그렇다면 회사는 자동 발송 이메일을 좀 더 친근감있게 작성할 필요가 있습니다. 아래와 같은 방식은 어떤가요?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>발신인: contact@example.org
+
+안녕하세요.
+
+고객님이 문의를 남겨주신 (서비스명)입니다.
+말씀해주신 사항은 저희가 면밀하게 살펴보고 있습니다.
+정확한 답변에 2~3 영업일이 소요된다는 점 너그러이 양해 부탁드립니다.
+
+만약 추가로 궁금하신 점이 있다면, 이 이메일에 답장으로 부담없이 문의 주세요.
+
+감사합니다.
+
+(회사의 로고 혹은 고객지원팀 연락처 명함 이미지)
+</code></pre></div></div>
+
+<p>자동 응답 이메일 티가 팍팍 나는 이상한 디자인을 사용하지 않고, 평문으로만 이루어져있는 위와같은 이메일은 어떤가요? 더욱 사람냄새 나지 않나요?</p>
+
+<p>간단한 회사 명함이나 로고정도는 하단에 첨부해도  고객이 추가문의에 거부감을 느끼지 않을 것입니다.</p>
+
+<h2 id="그-외에-답신금지를-쓰면-안되는-이유">그 외에, 답신금지를 쓰면 안되는 이유</h2>
+
+<p>고객 경험과 관련된 추상적인 생각에 동의하지 않으신다면 더욱 현실적인 이야기를 해드리겠습니다.</p>
+
+<p>물론 회사가 어떤 메일서버를 이용하냐에 따라 다르기야 하겠지만, 만약 자체 서버를 이용하는 경우 noreply 이메일은 고객 이메일 서비스의 스팸 필터에 걸리는 일도 잦습니다. 물론 스팸 필터의 방식에 따라서 다르겠지만, 해당 서버의 평판이 쌓이기 전까진 보통 회신 불가능한 이메일 주소의 기본 평판은 낮습니다.</p>
+
+<p>회사 입장에서 고객의 의견을 수렴할 수 있는 절호의 기회를 반토막 내는 것이기도 합니다. 다섯 명 중 한 명 꼴로만 해당 자동 응답 이메일에 회신해준다면, 회사는 20%의 고객 의견을 더욱 경청할 수 있습니다.</p>
+
+<h2 id="어떤-이메일-주소가-적합할까">어떤 이메일 주소가 적합할까?</h2>
+
+<p>해외 매거진에서 처음 이런 주제의 글을 보았을 땐, <code class="language-plaintext highlighter-rouge">please-reply</code>라는 주소를 추천해주는 경우도 있었습니다. 굉장히 독특하고 기분 좋은 아이디어입니다.</p>
+
+<p>개인적으로 가장 무난한 것은 <code class="language-plaintext highlighter-rouge">contact</code>라고 생각합니다. <code class="language-plaintext highlighter-rouge">service</code>나 <code class="language-plaintext highlighter-rouge">support</code>는 양방향 소통이 가능하다 하더라도 다소 딱딱한 느낌을 주기 때문에, 그렇게 선호하지는 않습니다. (주관적인 느낌입니다.)</p>
+
+<p>개인적으로 추천하는 두 가지는 <code class="language-plaintext highlighter-rouge">please-reply</code>와 <code class="language-plaintext highlighter-rouge">contact</code>입니다. (자동 발신 이메일에 답장하는 것과 같이) 고객이 직접 주소를 입력할 필요가 없는 경우 <code class="language-plaintext highlighter-rouge">please-reply</code>가, 고객이 직접 주소를 쳐서 문의하는 방식의 경우 <code class="language-plaintext highlighter-rouge">contact</code>가 제일 좋아보입니다.</p>
+
+<p>여러분이 운영하는 서비스는 어떤 이메일 주소를 사용하고 있나요?</p>
+
+  
+</article>
+
+
+
+<footer>
+  <div>Made with <b style="color: #f45;">&lt;3</b></div>
+  <nav><a href="mailto:contact@pnal.dev" ><svg aria-label="Mail" class="icon"><use xlink:href="/assets/fontawesome/icons.svg#envelope"></use></svg></a><a href="https://github.com/devPnal" ><svg aria-label="Github" class="icon"><use xlink:href="/assets/fontawesome/icons.svg#github"></use></svg></a></nav>
+
+</footer>
+
+
+</html>
